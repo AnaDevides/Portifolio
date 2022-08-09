@@ -7,7 +7,7 @@
     /*===== Colores =====*/
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
     /* HSL color mode */
-    --hue-color: 224;
+    --hue-color: 260;
     --first-color: hsl(var(--hue-color), 89%, 60%);
     --second-color: hsl(var(--hue-color), 56%, 12%);
     /*===== Fuente y tipografia =====*/
@@ -341,23 +341,36 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-    row-gap: 2rem;
+    row-gap: 10rem;
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1000px;
+    position: relative;
+    overflow-x: auto;
+    /*overflow: hidden;*/
 }
 
 .work__img {
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
     border-radius: .5rem;
+    flex-direction: column;
+    flex-shrink: 0;
     overflow: hidden;
+    
 }
 
     .work__img img {
         transition: 1s;
+        width: 250px;
+        display: flex;
     }
 
         .work__img img:hover {
             transform: scale(1.1);
         }
 
+
+        
 /* ===== CONTACT =====*/
 .contact__input {
     width: 100%;
@@ -378,6 +391,7 @@ img {
     cursor: pointer;
     margin-left: auto;
 }
+
 
 /* ===== FOOTER =====*/
 .footer {

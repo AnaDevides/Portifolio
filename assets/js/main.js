@@ -1,3 +1,4 @@
-function Enviar() {
-    alert(`Obrigado sr(a) o(s) seu(s) pedidos foram encaminhados com sucesso`);
+function enviar() {
+    alert(`Obrigado sr(a) em breve receberá um retorno!`);
 }
+
